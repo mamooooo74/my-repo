@@ -3,8 +3,11 @@ on: push
 jobs:
   hello: 
     runs-on: ubuntu-latest
+    env: 
+      USERNAME: ${{vars.USERNAME}}
+      TEST: ${{ vars.TEST }}
     steps:
-      - run: echo "Hello world!!"
-      - uses: actions/checkout@v4
+      - run: echo "${USERNAME}"
+      - run: echo "${TEST}"
 
       
