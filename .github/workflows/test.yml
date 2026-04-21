@@ -4,7 +4,7 @@ on:
     paths: ['go/**/*.go']
 jobs:
   test:
-    runs-on:
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4
       - uses: action/setup-go@v5
