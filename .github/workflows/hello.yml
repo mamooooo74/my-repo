@@ -6,8 +6,10 @@ jobs:
     env: 
       USERNAME: ${{vars.USERNAME}}
       TEST: ${{ vars.TEST }}
+      SECRET: ${{secrets.SECRET }}
     steps:
       - run: echo "${USERNAME}"
       - run: echo "${TEST}"
+      - run: echo "${SECRET}"
 
       
