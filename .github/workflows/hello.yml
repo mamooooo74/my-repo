@@ -1,15 +1,9 @@
 name: Hello
 on: push
 jobs:
-  hello: 
+  log: 
     runs-on: ubuntu-latest
-    env: 
-      USERNAME: ${{vars.USERNAME}}
-      TEST: ${{ vars.TEST }}
-      SECRET: ${{secrets.SECRET }}
     steps:
-      - run: echo "${USERNAME}"
-      - run: echo "${TEST}"
-      - run: echo "${SECRET}"
+      - run: echo "::debug::This is debug log"
 
       
