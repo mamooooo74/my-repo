@@ -4,8 +4,14 @@ jobs:
   first: 
     runs-on: ubuntu-latest
     steps:
-      - run: echo "start"
-      - run: sleep 10
-      - run: echo "end"
+      - run: sleep 10 && echo "first"
+  second: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10 && echo "second"
+  third: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 10 && echo "third"
       
       
