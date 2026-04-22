@@ -1,10 +1,11 @@
 name: Annotation
 on: push
 jobs:
-  log: 
+  first: 
     runs-on: ubuntu-latest
     steps:
-      - run: echo "::error::This is an error"
-      - run: echo "::warning::This is a warning"
-      - run: echo "::notice::This is a notice"
+      - run: echo "start"
+      - run: sleep 10
+      - run: echo "end"
+      
       
